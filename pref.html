@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Preferences Setup</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="logo-icon">
+                    <path
+                        d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                    <path d="M5 3v4" />
+                    <path d="M19 17v4" />
+                    <path d="M3 5h4" />
+                    <path d="M17 19h4" />
+                </svg>
+                MovieMate
+            </div>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Help</a></li>
+                <li><a href="#">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="container">
+            <h1>Set Up Your Preferences</h1>
+            <p class="subtitle">Let's personalize your movie recommendations</p>
+
+            <form id="preferencesForm">
+                <section class="preference-section">
+                    <h2>
+                        <span class="required">*</span>
+                        Preferred Movie Genres
+                        <span class="tooltip" data-tooltip="Select genres you enjoy watching">ⓘ</span>
+                    </h2>
+                    <div class="genre-controls">
+                        <button type="button" id="selectAllGenres">Select All</button>
+                        <button type="button" id="clearGenres">Clear</button>
+                    </div>
+                    <div class="genres-grid" id="genresContainer">
+                        <!-- Genres will be populated by JavaScript -->
+                    </div>
+                </section>
+
+                <section class="preference-section">
+                    <h2>
+                        Preferred Streaming Platforms
+                        <span class="tooltip" data-tooltip="Select platforms you have access to">ⓘ</span>
+                    </h2>
+                    <div class="platforms-grid" id="platformsContainer">
+                        <!-- Platforms will be populated by JavaScript -->
+                    </div>
+                </section>
+
+                <section class="preference-section">
+                    <h2>
+                        Preferred Languages
+                        <span class="tooltip" data-tooltip="Select your preferred movie languages">ⓘ</span>
+                    </h2>
+                    <div class="languages-container" id="languagesContainer">
+                    </div>
+                </section>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-primary">Save & Continue</button>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
