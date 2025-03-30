@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieMate - Movie Recommendations</title>
+    <link rel="stylesheet" href="cover.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar Toggle Button -->
+        <button class="sidebar-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <button class="sidebar-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="logo">
+                <i class="fas fa-film"></i>
+                <span>MovieMate</span>
+            </div>
+            <ul class="nav-links">
+                <li class="active"><a href="#home"><i class="fas fa-home"></i>Home</a></li>
+                <li><a href="#discover"><i class="fas fa-compass"></i>Discover</a></li>
+                <li><a href="#trending"><i class="fas fa-fire"></i>Trending</a></li>
+                <li><a href="#watchlist"><i class="fas fa-bookmark"></i>Watchlist</a></li>
+                <li><a href="#genres"><i class="fas fa-theater-masks"></i>Genres</a></li>
+                <li><a href="#upcoming"><i class="fas fa-calendar"></i>Upcoming</a></li>
+                <li><a href="#favorites"><i class="fas fa-heart"></i>Favorites</a></li>
+                <li><a href="#settings"><i class="fas fa-cog"></i>Settings</a></li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <div class="user-status">
+                    <div class="profile-img">
+                        <img src="https://api.dicebear.com/6.x/avataaars/svg?seed=Felix" alt="Profile">
+                    </div>
+                    <div class="user-info">
+                        <h4>John Doe</h4>
+                        <span>Premium User</span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <div class="search-bar">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Search for movies...">
+                </div>
+                <div class="user-profile">
+                    <div class="notification-bell">
+                        <i class="fas fa-bell"></i>
+                        <span class="notification-badge">3</span>
+                    </div>
+                    <div class="profile-img">
+                        <img src="https://api.dicebear.com/6.x/avataaars/svg?seed=Felix" alt="Profile">
+                    </div>
+                </div>
+            </header>
+
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Discover Your Next Favorite Movie</h1>
+                    <p>Get personalized movie recommendations based on your taste</p>
+                    <button class="cta-button">Get Started</button>
+                </div>
+                <div class="featured-movies">
+                    <div class="movie-card">
+                        <div class="movie-badge">Featured</div>
+                        <img src="https://source.unsplash.com/300x450/?movie-poster" alt="Movie">
+                        <div class="movie-info">
+                            <h3>Inception</h3>
+                            <div class="movie-meta">
+                                <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                                <span class="duration">2h 28m</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie-card">
+                        <div class="movie-badge">Top Rated</div>
+                        <img src="https://source.unsplash.com/300x450/?cinema" alt="Movie">
+                        <div class="movie-info">
+                            <h3>The Dark Knight</h3>
+                            <div class="movie-meta">
+                                <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                                <span class="duration">2h 32m</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="trending-section">
+                <h2>Trending Now <i class="fas fa-fire"></i></h2>
+                <div class="trending-grid">
+                    <div class="trending-card">
+                        <img src="https://source.unsplash.com/250x350/?action-movie" alt="Trending Movie">
+                        <div class="trending-info">
+                            <h3>Avatar 2</h3>
+                            <span class="genre">Sci-Fi</span>
+                        </div>
+                    </div>
+                    <div class="trending-card">
+                        <img src="https://source.unsplash.com/250x350/?drama-movie" alt="Trending Movie">
+                        <div class="trending-info">
+                            <h3>The Godfather</h3>
+                            <span class="genre">Drama</span>
+                        </div>
+                    </div>
+                    <div class="trending-card">
+                        <img src="https://source.unsplash.com/250x350/?thriller-movie" alt="Trending Movie">
+                        <div class="trending-info">
+                            <h3>Interstellar</h3>
+                            <span class="genre">Sci-Fi</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="categories">
+                <h2>Popular Categories</h2>
+                <div class="category-grid">
+                    <div class="category-card">
+                        <i class="fas fa-laugh-beam"></i>
+                        <span>Comedy</span>
+                        <span class="movie-count">238 movies</span>
+                    </div>
+                    <div class="category-card">
+                        <i class="fas fa-ghost"></i>
+                        <span>Horror</span>
+                        <span class="movie-count">167 movies</span>
+                    </div>
+                    <div class="category-card">
+                        <i class="fas fa-heart"></i>
+                        <span>Romance</span>
+                        <span class="movie-count">192 movies</span>
+                    </div>
+                    <div class="category-card">
+                        <i class="fas fa-rocket"></i>
+                        <span>Sci-Fi</span>
+                        <span class="movie-count">215 movies</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="newsletter">
+                <div class="newsletter-content">
+                    <h2>Stay Updated!</h2>
+                    <p>Subscribe to our newsletter for weekly movie recommendations</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Enter your email">
+                        <button class="subscribe-btn">Subscribe</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="cover.js"></script>
+</body>
+</html>
