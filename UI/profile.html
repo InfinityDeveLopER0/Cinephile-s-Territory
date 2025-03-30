@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MovieMingle - Your Profile</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <button class="sidebar-toggle">&#9776;</button>
+  <div class="sidebar">
+    <div class="logo">MovieMingle</div>
+    <ul class="nav-links">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Discover</a></li>
+      <li><a href="#">Watchlist</a></li>
+      <li><a href="#">Profile</a></li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <h2>Welcome, Alex!</h2>
+    </header>
+    
+    <div class="profile-container">
+      <div class="profile-header">
+        <div class="profile-pic">
+          <img src="https://i.pravatar.cc/150?img=11" alt="Profile Picture">
+        </div>
+        <div class="profile-info">
+          <h1>Alex Johnson</h1>
+          <p class="username">@moviebuff</p>
+          <p class="bio">Film enthusiast with a passion for sci-fi and drama. Always looking for hidden gems!</p>
+          <div class="stats">
+            <div class="stat"><span class="count">253</span><span class="label">Movies Watched</span></div>
+            <div class="stat"><span class="count">42</span><span class="label">Reviews</span></div>
+            <div class="stat"><span class="count">87</span><span class="label">Watchlist</span></div>
+          </div>
+          <button class="edit-profile">Edit Profile</button>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="favorites">Favorites</button>
+        <button class="tab-btn" data-tab="recommendations">Recommendations</button>
+        <button class="tab-btn" data-tab="reviews">Reviews</button>
+      </div>
+
+      <div class="tab-content" id="favorites">
+        <h2>Your Favorite Movies</h2>
+        <div class="movie-grid"></div>
+      </div>
+      <div class="tab-content" id="recommendations" style="display:none;">
+        <h2>Recommended For You</h2>
+        <div class="movie-grid"></div>
+      </div>
+      <div class="tab-content" id="reviews" style="display:none;">
+        <h2>Your Reviews</h2>
+        <div class="reviews-list"></div>
+      </div>
+    </div>
+
+    <footer>
+      <p>&copy; 2023 MovieMingle. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <script src="profile.js"></script>
+</body>
+</html>
