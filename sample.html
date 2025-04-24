@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cinephile's Territory</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="sample1.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
-    <nav>
+    <nav class="navbar">
         <div class="nav-content">
             <div class="logo">
                 <i data-lucide="film" class="logo-icon"></i>
@@ -24,34 +24,43 @@
             </div>
         </div>
     </nav>
-
-    <!-- Hero Section -->
-
-    <section id="home" class="active">
-        <div class="hero">
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero">
             <div class="hero-content">
-                <h1>Discover Your Next Favorite Movie</h1>
-                <p>Explore a world of cinematic adventures and find personalized recommendations.</p>
-                <button class="cta-btn" onclick="openModal(true)">Get Started</button>
+                <div class="hero-text">
+                    <h1>Discover Your Next Cinematic Obsession</h1>
+                    <p>Dive into a world of movies tailored just for you. Explore, discover, and enjoy.</p>
+                    <button class="cta-btn" onclick="openModal(true)">Get Started</button>
+                </div>
+                <div class="hero-image">
+                    <img src="https://placehold.co/400x300" alt="Hero Image">
+                </div>
             </div>
-        </div>
-    </section>
-
-    <section class="how-it-works">
-        <h2 class="section-title">How Cinephile Works</h2>
-        <p>Cinephile's Territory uses advanced algorithms to recommend movies tailored to your taste. Explore our vast collection, discover hidden gems, and enjoy a personalized cinematic journey.</p>
-        <p>Our sophisticated recommendation system learns from your ratings, preferences, and viewing history to curate the perfect watchlist for you. Dive into a world of endless movie possibilities, explore different genres, and share your passion with fellow cinephiles.</p>
-    </section>
-    <!-- About Section -->
-    <div id="about" class="about">
-        <h2>About Cinephile's Territory </h2>
-        <p>Cinephile's Territory is your personal movie curator, with your preferences
-            we suggest films you'll love, Best theatres for good experinece
-            Say goodbye to endless scrolling and hello to perfect picks.</p>
-    </div>
-
-    <!-- Features Section -->
-    <div id="features" class="features">
+        </section>
+        <section class="how-it-works">
+            <div class="container">
+                <h2 class="section-title">How Cinephile's Territory Works</h2>
+                <p>
+                    Cinephile's Territory uses advanced algorithms to recommend movies tailored to your taste.
+                    Explore our vast collection, discover hidden gems, and enjoy a personalized cinematic journey.
+                </p>
+                <p>
+                    Our sophisticated recommendation system learns from your ratings, preferences, and viewing history to
+                    curate the perfect watchlist for you. Dive into a world of endless movie possibilities, explore
+                    different genres, and share your passion with fellow cinephiles.
+                </p>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About Cinephile's Territory</h2>
+                <p>Cinephile's Territory is your personal movie curator. With your preferences, we suggest films you'll love and the best theaters for an optimal experience. Say goodbye to endless scrolling and hello to perfect picks.</p>
+            </div>
+        </section>
+        <!-- Features Section -->
+        <section id="features" class="features">
         <h2>Features</h2>
         <div class="features-grid">
             <div class="feature-card">
@@ -67,14 +76,17 @@
                 <p>Share your Reviews, and find other crtics reviews from various Sources</p>
             </div>
         </div>
-    </div>
+        </section>
 
-    <!-- Contact Section -->
-    <div id="contact" class="contact">
-        <h2>Contact Us</h2>
-        <p>Have questions? We'd love to hear from you.</p>
-        <a href="mailto:contact@moviemind.com">Cinephileterri@gmail.com</a>
-    </div>
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Have questions or feedback? We'd love to hear from you.</p>
+                <a href="mailto:cinephileterri@gmail.com">Cinephileterri@gmail.com</a>
+            </div>
+        </section>
+    </main>
 
     <!-- Auth Modal -->
     <div class="modal" id="authModal">
@@ -150,7 +162,7 @@
         </div>
     </div>
 
-    <script src="./script.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>
